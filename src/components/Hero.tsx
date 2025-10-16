@@ -7,11 +7,17 @@ const Hero = () => {
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="relative">
-            <img 
-              src={trainHero} 
-              alt="РЖД Train" 
-              className="w-full h-auto rounded-2xl shadow-2xl"
-            />
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img 
+                src={trainHero} 
+                alt="РЖД Train" 
+                className="w-full h-auto"
+                style={{
+                  maskImage: 'linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)',
+                  WebkitMaskImage: 'linear-gradient(to right, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)'
+                }}
+              />
+            </div>
           </div>
           <div className="text-center lg:text-left space-y-6">
             <h1 className="text-5xl md:text-7xl font-bold text-foreground">

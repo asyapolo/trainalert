@@ -4,7 +4,7 @@ const Partnership = () => {
       <div className="container mx-auto max-w-4xl">
         <div className="text-center space-y-8">
           <p className="text-xl md:text-2xl text-foreground leading-relaxed">
-            Совместно с РЖД при помощи мобильного приложения мы будем решать следующие тезисы:
+            Совместно с РЖД при помощи мобильного приложения мы решаем следующие тезисы:
           </p>
           <ul className="text-lg md:text-xl text-muted-foreground space-y-4 text-left max-w-3xl mx-auto">
             <li className="flex items-start">

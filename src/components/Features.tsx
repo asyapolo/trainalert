@@ -1,4 +1,4 @@
-import { Bell, Map, Music, HelpCircle, WifiOff, Info, Star, Users } from "lucide-react";
+import { Bell, Map, Music, HelpCircle, WifiOff, MessageSquare, Star, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
@@ -28,9 +28,9 @@ const features = [
     description: "Доступ ко всем переездам и оповещениям даже без подключения к интернету.",
   },
   {
-    icon: Info,
-    title: "Подробная информация о переездах",
-    description: "Актуальные сообщения о вас о состоянии переездов и о состоянии важную информацию не сообщать.",
+    icon: MessageSquare,
+    title: "Обратная связь",
+    description: "Пользователи могут отправить обратную связь по состоянию переезда в РЖД через форму в приложении.",
   },
   {
     icon: Star,

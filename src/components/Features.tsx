@@ -1,4 +1,4 @@
-import { Bell, Map, Music, HelpCircle, WifiOff, Info } from "lucide-react";
+import { Bell, Map, Music, HelpCircle, WifiOff, Info, Star, Users } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 const features = [
@@ -31,6 +31,16 @@ const features = [
     icon: Info,
     title: "Подробная информация о переездах",
     description: "Актуальные сообщения о вас о состоянии переездов и о состоянии важную информацию не сообщать.",
+  },
+  {
+    icon: Star,
+    title: "Рейтинг",
+    description: "Оценка переездов от пользователей",
+  },
+  {
+    icon: Users,
+    title: "Режимы работы приложения",
+    description: "Раздельные режимы как для водителей, так и для пешеходов",
   },
 ];
 

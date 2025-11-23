@@ -13,6 +13,9 @@ const Header = () => {
             <a href="#about" className="text-foreground/80 hover:text-foreground transition-colors">
               О приложении
             </a>
+            <a href="/articles" className="text-foreground/80 hover:text-foreground transition-colors">
+              Статьи
+            </a>
             <a href="#reviews" className="text-foreground/80 hover:text-foreground transition-colors">
               Отзывы
             </a>

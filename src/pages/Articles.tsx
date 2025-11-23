@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Calendar } from "lucide-react";
 import articleWelcome from "@/assets/article-welcome.webp";
 import articleSolution from "@/assets/article-solution.png";
+import articleStatistics from "@/assets/article-statistics.jpg";
 
 const articles = [
   {
@@ -31,6 +32,7 @@ const articles = [
     title: "Статистика безопасности на переездах",
     description: "Анализ данных и улучшение безопасности",
     date: "5 ноября 2025",
+    image: articleStatistics,
     excerpt: "Последние данные показывают положительную динамику в снижении инцидентов..."
   }
 ];

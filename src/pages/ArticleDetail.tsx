@@ -4,13 +4,16 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar } from "lucide-react";
 import articleWelcome from "@/assets/article-welcome.webp";
+import articleMvp from "@/assets/article-mvp.png";
+import articleProblem from "@/assets/article-problem.png";
+import articleSolution from "@/assets/article-solution.png";
 
 const articles = {
   "welcome": {
     id: "welcome",
     title: "Добро пожаловать в Train Alert",
     date: "15 ноября 2025",
-    image: articleWelcome,
+    images: [articleWelcome],
     content: `Мы — команда «Просто, но со вкусом», и мы создаём сервис, который делает железнодорожные переезды безопасными.
 TrainAlert предупреждает водителей о приближении к переезду, показывает актуальное состояние, собирает отзывы и помогает избежать рисков там, где каждая секунда важна.
 
@@ -20,6 +23,32 @@ TrainAlert предупреждает водителей о приближени
 Оставайтесь с нами — дальше будет интересно!
 
 TrainAlert — безопасность начинается заранее.`
+  },
+  "why-trainalert": {
+    id: "why-trainalert",
+    title: "Почему именно TrainAlert?",
+    date: "10 ноября 2025",
+    images: [articleMvp, articleProblem, articleSolution],
+    content: `Мы создаём не просто приложение — мы создаём систему безопасности нового поколения. Там, где другие ограничиваются картой, мы формируем понимание, предупреждаем заранее и даём инструменты, которые реально спасают жизни.
+
+🔹 Мы делаем сложное простым.
+TrainAlert заранее сообщает о переезде, его типе и состоянии — водитель не тратит время на догадки.
+
+🔹 Мы опираемся на реальные данные РЖД.
+Никаких предположений — только проверенная информация и аналитика, которую мы объединяем в единую платформу.
+
+🔹 Мы слушаем водителей.
+«Народный рейтинг» и чат переезда делают TrainAlert живой системой, где каждый может предупредить других и внести свой вклад в безопасность.
+
+🔹 Мы уменьшаем риски и для водителей, и для РЖД.
+Повышение осознанности на дороге + инструмент оптимизации инфраструктуры = двойной эффект.
+
+🔹 Мы создаём цифровой щит.
+Не пугаем, а помогаем понять.
+Не нагружаем, а упрощаем.
+Не информируем — защищаем.
+
+TrainAlert — потому что безопасность должна быть умной, а технологии — работать там, где это важнее всего.`
   }
 };
 
@@ -59,11 +88,14 @@ const ArticleDetail = () => {
           </Button>
           
           <article className="bg-card rounded-lg overflow-hidden shadow-lg">
-            <img
-              src={article.image}
-              alt={article.title}
-              className="w-full h-[400px] object-cover"
-            />
+            {article.images.map((image, idx) => (
+              <img
+                key={idx}
+                src={image}
+                alt={`${article.title} - ${idx + 1}`}
+                className="w-full h-auto object-cover"
+              />
+            ))}
             
             <div className="p-8">
               <div className="flex items-center gap-2 text-sm text-muted-foreground mb-4">

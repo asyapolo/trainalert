@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
 import articleWelcome from "@/assets/article-welcome.webp";
+import articleSolution from "@/assets/article-solution.png";
 
 const articles = [
   {
@@ -16,12 +17,13 @@ const articles = [
     excerpt: "Мы — команда «Просто, но со вкусом», и мы создаём сервис, который делает железнодорожные переезды безопасными..."
   },
   {
-    id: "system",
-    slug: "system",
-    title: "Как работает система оповещений TrainAlert",
-    description: "Подробное описание функционала приложения",
+    id: "why-trainalert",
+    slug: "why-trainalert",
+    title: "Почему именно TrainAlert?",
+    description: "Система безопасности нового поколения",
     date: "10 ноября 2025",
-    excerpt: "TrainAlert использует современные технологии для своевременного информирования пользователей..."
+    image: articleSolution,
+    excerpt: "Мы создаём не просто приложение — мы создаём систему безопасности нового поколения..."
   },
   {
     id: "statistics",
